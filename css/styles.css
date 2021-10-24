@@ -1,0 +1,481 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+
+  background-color: coral;
+}
+a {
+  color: white;
+}
+.header {
+  background-color: brown;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(10, 54, 65);
+}
+.header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid rgb(10, 54, 65);
+  text-decoration: none;
+}
+.header ul a:hover {
+  color: chartreuse;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:after {
+  background-color: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  transition: all 0.2s ease-out;
+}
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.footer {
+  background-color: rgb(10, 54, 65);
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 300px;
+  width: 100%;
+}
+.buy1 {
+  position: absolute;
+  top: 1480px;
+  height: 22px;
+  left: 100px;
+}
+.buy2 {
+  position: absolute;
+  height: 22px;
+  left: 329px;
+  top: 1480px;
+}
+.buy3 {
+  position: absolute;
+  height: 22px;
+  left: 609px;
+  top: 1480px;
+}
+.buy4 {
+  position: absolute;
+  height: 22px;
+  left: 839px;
+  top: 1480px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 375px) {
+  /*375px width*/
+  body {
+    background-color: white;
+  }
+
+  .lsk {
+    position: static;
+    left: 269px;
+    top: 600px;
+  }
+
+  .logo {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    left: 115px;
+    top: 2px;
+  }
+  .guy {
+    position: absolute;
+    left: 0px;
+    width: 375px;
+  }
+  .member {
+    position: relative;
+    top: 340px;
+  }
+  .buy1 {
+    position: absolute;
+    top: 1480px;
+    height: 22px;
+    left: 100px;
+  }
+  .buy2 {
+    position: absolute;
+    height: 22px;
+    left: 329px;
+    top: 1480px;
+  }
+  .buy3 {
+    position: absolute;
+    height: 22px;
+    left: 609px;
+    top: 1480px;
+  }
+  .buy4 {
+    position: absolute;
+    height: 22px;
+    left: 839px;
+    top: 1480px;
+  }
+  .orange-jacket1 {
+    cursor: pointer;
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 29px;
+    top: 599px;
+  }
+  .yellow-jacket1 {
+    cursor: pointer;
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 212px;
+    top: 599px;
+  }
+  .orange-jacket2 {
+    cursor: pointer;
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 29px;
+    top: 827px;
+  }
+  .yellow-jacket2 {
+    cursor: pointer;
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 212px;
+    top: 827px;
+  }
+  .buy1 {
+    position: absolute;
+    height: 22px;
+    left: 41px;
+    top: 759px;
+  }
+  .buy2 {
+    position: absolute;
+    height: 22px;
+    left: 224px;
+    top: 759px;
+  }
+  .buy3 {
+    position: absolute;
+    height: 22px;
+    left: 41px;
+    top: 987px;
+  }
+  .buy4 {
+    position: absolute;
+    height: 22px;
+    left: 224px;
+    top: 987px;
+  }
+  .lsk {
+    color: rgb(10, 54, 65);
+    position: absolute;
+    left: 100px;
+    top: 530px;
+    height: 48px;
+    width: 160px;
+    margin: auto;
+  }
+  .kls {
+    color: rgb(10, 54, 65);
+    position: absolute;
+    left: 100px;
+    top: 1150px;
+    height: 48px;
+    width: 160px;
+    margin: auto;
+  }
+  .orange-jacket3 {
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 41px;
+    top: 1300px;
+  }
+  .yellow-jacket3 {
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 224px;
+    top: 1300px;
+  }
+  .orange-jacket4 {
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 41px;
+    top: 1530px;
+  }
+  .yellow-jacket4 {
+    position: absolute;
+    width: 109px;
+    height: 146px;
+    left: 224px;
+    top: 1530px;
+  }
+  .buy5 {
+    position: absolute;
+    height: 22px;
+    left: 53px;
+    top: 1465px;
+  }
+  .buy6 {
+    position: absolute;
+    height: 22px;
+    left: 236px;
+    top: 1465px;
+  }
+  .buy7 {
+    position: absolute;
+    height: 22px;
+    left: 53px;
+    top: 1700px;
+  }
+  .buy8 {
+    position: absolute;
+    height: 22px;
+    left: 236px;
+    top: 1700px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  body {
+    background-color: white;
+  }
+  .buy1 {
+    position: absolute;
+    top: 1480px;
+    height: 22px;
+    left: 100px;
+  }
+  .buy2 {
+    position: absolute;
+    height: 22px;
+    left: 329px;
+    top: 1480px;
+  }
+  .buy3 {
+    position: absolute;
+    height: 22px;
+    left: 609px;
+    top: 1480px;
+  }
+  .buy4 {
+    position: absolute;
+    height: 22px;
+    left: 839px;
+    top: 1480px;
+  }
+  .orange-jacket1 {
+    cursor: pointer;
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 803px;
+    top: 1250px;
+  }
+  .yellow-jacket1 {
+    cursor: pointer;
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 573px;
+    top: 1250px;
+  }
+  .orange-jacket2 {
+    cursor: pointer;
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 293px;
+    top: 1250px;
+  }
+  .yellow-jacket2 {
+    cursor: pointer;
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 64px;
+    top: 1250px;
+  }
+
+  .logo {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    left: 5px;
+    top: 0px;
+  }
+  .member {
+    position: absolute;
+    top: 770px;
+    left: 230px;
+  }
+  .lsk {
+    color: rgb(10, 54, 65);
+    position: absolute;
+    left: 390px;
+    top: 1100px;
+    height: 48px;
+    width: 160px;
+    margin: auto;
+  }
+  .kls {
+    color: rgb(10, 54, 65);
+    position: absolute;
+    left: 390px;
+    top: 1800px;
+    height: 48px;
+    width: 160px;
+    margin: auto;
+  }
+
+  .guy {
+    position: absolute;
+    left: 0px;
+    top: 58px;
+    width: 1024px;
+  }
+
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .orange-jacket3 {
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 64px;
+    top: 1970px;
+  }
+  .yellow-jacket3 {
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 293px;
+    top: 1970px;
+  }
+  .orange-jacket4 {
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 522px;
+    top: 1970px;
+  }
+  .yellow-jacket4 {
+    position: absolute;
+    width: 156.75px;
+    height: 210px;
+    left: 751px;
+    top: 1970px;
+  }
+  .buy5 {
+    position: absolute;
+    height: 22px;
+    left: 100px;
+    top: 2200px;
+  }
+  .buy6 {
+    position: absolute;
+    height: 22px;
+    left: 329px;
+    top: 2200px;
+  }
+  .buy7 {
+    position: absolute;
+    height: 22px;
+    left: 558px;
+    top: 2200px;
+  }
+  .buy8 {
+    position: absolute;
+    height: 22px;
+    left: 787px;
+    top: 2200px;
+  }
+  .fotter {
+    cursor: pointer;
+  }
+}
