@@ -96,7 +96,7 @@ a {
   transform: rotate(45deg);
   top: 0;
 }
-
+/*
 .footer {
   background-color: rgb(10, 54, 65);
   position: absolute;
@@ -129,19 +129,10 @@ a {
   left: 839px;
   top: 1480px;
 }
+*/
 
-@media screen and (min-width: 375px) and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 480px) {
   /*375px width*/
-  body {
-    background-color: white;
-  }
-
-  .lsk {
-    position: static;
-    left: 269px;
-    top: 600px;
-  }
-
   .logo {
     position: absolute;
     width: 80px;
@@ -150,10 +141,23 @@ a {
     top: 2px;
   }
   .guy {
-    position: absolute;
+    position: relative;
+    padding: 0%;
     left: 0px;
-    width: 375px;
+    width: 100%;
   }
+  
+  /*
+  .lsk {
+    position: static;
+    left: 269px;
+    top: 600px;
+    background-color: aqua;
+  }
+*/
+  
+  
+  /*
   .member {
     position: relative;
     top: 340px;
@@ -308,12 +312,17 @@ a {
     left: 236px;
     top: 1700px;
   }
+  .footer {
+    width: 100%;
+  }
+  */
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
   body {
     background-color: white;
   }
+  /*
   .buy1 {
     position: absolute;
     top: 1480px;
@@ -479,3 +488,4 @@ a {
     cursor: pointer;
   }
 }
+*/
